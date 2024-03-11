@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: arial;
+    background-color: rgb(121, 184, 252);
+  }
+  
+  header {
+    background-color: rgb(9, 19, 214);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  header .logo img {
+    max-height: 100px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  header .nav-izquierda ul, header .nav-derecha ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  header .nav-izquierda li, header .nav-derecha li {
+    margin-right: 20px;
+  }
+  
+  header .nav-izquierda a, header .nav-derecha a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  main {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  main .brand-section {
+    margin-bottom: 40px;
+  }
+  
+  main .brand-section h1 {
+    font-family: cambria;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  main .brand-section .subtitle {
+    font-family: didot;
+    color: black;
+  }
+  
+  main .image-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  main .image-section a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  main .image-container {
+    text-align: center;
+    width: 30%;
+  }
+  
+  main .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
+  
+  footer {
+    background-color: rgb(9, 19, 214);
+    color: black;
+    padding: 20px;
+  }
+  
+  footer div div a img {
+    max-width: 35px;
+    max-height: 35px;
+    animation: late 1s infinite alternate;
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .producto {
+    border: 1px solid blue;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .producto h3 {
+    margin-top: 10px;
+    color: black;
+    font-family: arial;
+  }
+  
+  .producto p {
+    font-family: ginebra;
+  }
+  
+  #acerca-de-nosotros-main {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .half-section {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .half-section h2 {
+    font-family: cambria;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .half-section p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    font-family: didot;
+  }
+  
+  .logo-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo-container img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+  header {
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+  header .nav-izquierda ul, header .nav-derecha ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+  
+  header .nav-izquierda li, header .nav-derecha li {
+      margin-right: 10px;
+    }
+  
+  header .nav-izquierda a, header .nav-derecha a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  
+  header .logo img {
+      max-height: 80px;
+    }
+  
+  footer {
+      padding: 10px;
+      margin-top: 0;
+      color: black;
+      text-align: center;
+    }
+  
+  footer div div a img {
+      max-width: 25px;
+      max-height: 25px;
+    }
+  
+  main {
+      padding: 20px;
+    }
+  
+  main .image-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  .productos {
+      display: block;
+    }
+  
+  .producto {
+      border: 1px solid blue;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+  .producto img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+  .producto h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  
+  .producto p {
+      font-size: 14px;
+    }
+  
+  .half-section {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+  .half-section h2 {
+      font-size: 20px;
+      color: black;
+    }
+  
+  .half-section p {
+      font-size: 16px;
+      color: black;
+      margin-top: 10px;
+    }
+  
+  .logo-container {
+      display: none;
+    }
+  
+  h1 {
+      font-size: 24px;
+    }
+  
+  p {
+      font-size: 16px;
+    }
+  }
